@@ -1,4 +1,8 @@
 import { registerRootComponent } from 'expo';
+import { enableScreens } from 'react-native-screens';
+
+// Disable native screens to avoid Fabric prop-type mismatches in Expo Go
+enableScreens(false);
 
 import App from './App';
 
